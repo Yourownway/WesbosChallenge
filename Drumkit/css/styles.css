@@ -1,0 +1,48 @@
+*,*::after,*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../assets/background.jpg);
+    height: 100vh;
+    font-family: sans-serif;
+    color: white;
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+    border: solid;
+}
+
+.sound-container{
+    display: flex;
+    margin: 0,auto;
+ 
+    justify-content: center;
+    width: 100%;
+    gap:20px;
+   
+}
+
+.sound-item{
+    display: inline-block ;
+    border: solid;
+    border-radius: 16px;
+    padding: 0.2em 0.1em;
+    background-color: black;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+.sound-item:hover{
+    border: solid yellow;
+}
+
+.sound-item.active{
+    border: solid yellow;
+    background-color: yellow;
+    color:black
+}
